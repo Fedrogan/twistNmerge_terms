@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Twist & Merge – Terms & Privacy</title>
+  <style>
+    :root {
+      --primary: #5c2d91;
+      --background: #ffffff;
+      --text: #1a1a1a;
+      --accent: #ece9f5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #121212;
+        --text: #f0f0f0;
+        --accent: #1e1e2e;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    select {
+      padding: 0.6rem;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--text);
+    }
+
+    .content {
+      display: none;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .content.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      margin-top: 2rem;
+      color: var(--primary);
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+
+  <script>
+    function showLanguage(lang) {
+      document.querySelectorAll('.content').forEach(div => div.classList.remove('active'));
+      const target = document.getElementById(lang);
+      if (target) target.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const langSelect = document.getElementById('language');
+      const browserLang = navigator.language.slice(0, 2).toLowerCase();
+      const supported = ['en','de','fr','es','pt','pl','ru','uk','zh','ja','ar'];
+      langSelect.value = supported.includes(browserLang) ? browserLang : 'en';
+      showLanguage(langSelect.value);
+
+      langSelect.addEventListener('change', e => {
+        showLanguage(e.target.value);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Twist & Merge – Terms of Service & Privacy Policy</h1>
+  </header>
+
+  <main>
+    <label for="language"><strong>Choose Language:</strong></label><br/>
+    <select id="language">
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="pl">Polski</option>
+      <option value="ru">Русский</option>
+      <option value="uk">Українська</option>
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="ar">العربية</option>
+    </select>
+
+  <div class="content active" id="en">
+    <h2>Terms of Service</h2>
+<p><strong>Effective Date:</strong> June 16, 2025</p>
+
+<p>Welcome to Twist & Merge, developed by Relax Games Studio ("we", "us", or "our").</p>
+
+<p>By downloading or using the game, you agree to these Terms of Service. If you do not agree, please do not use the game.</p>
+
+<h3>1. Eligibility</h3>
+<p>You must be at least 13 years old (or older if required by your local laws) to use this game.</p>
+
+<h3>2. License</h3>
+<p>We grant you a limited, non-exclusive, non-transferable, revocable license to use Twist & Merge for personal, non-commercial purposes. All rights to the game (including code, artwork, music, and content) belong to Relax Games Studio.</p>
+
+<h3>3. User Content</h3>
+<p>We do not collect custom user-generated content. Your player nickname is retrieved from Google Play Games or Apple Game Center.</p>
+
+<h3>4. In-App Purchases</h3>
+<p>All transactions are handled by the platform (Google Play or App Store). <strong>All purchases are final and non-refundable</strong>, unless required by law or platform policy. Virtual items have no real-world value and are not owned by you.</p>
+
+<h3>5. Advertising</h3>
+<p>The game displays third-party ads (e.g., IronSource). We are not responsible for their content or accuracy.</p>
+
+<h3>6. Leaderboards</h3>
+<p>The game includes leaderboards via Unity. By participating, you consent to share your nickname and score.</p>
+
+<h3>7. Prohibited Conduct</h3>
+<p>Do not cheat, exploit bugs, modify the game, use unauthorized software, harass other players, or break laws while using the game.</p>
+
+<h3>8. Termination</h3>
+<p>We may suspend or terminate your access if you violate these Terms. Your license will be revoked and your data may be deleted.</p>
+
+<h3>9. Disclaimer of Warranties</h3>
+<p>The game is provided "as is" without warranties of any kind.</p>
+
+<h3>10. Limitation of Liability</h3>
+<p>To the extent permitted by law, Relax Games Studio is not liable for indirect, incidental, or special damages.</p>
+
+<h3>11. Indemnification</h3>
+<p>You agree to indemnify us against claims or damages caused by your violation of these Terms.</p>
+
+<h3>12. Governing Law</h3>
+<p>These Terms are governed by the laws of the Republic of Belarus. Disputes will be resolved in Belarusian courts unless local laws provide otherwise.</p>
+
+<h3>13. Changes</h3>
+<p>We may update these Terms. Continued use means you accept the changes.</p>
+
+<h3>14. Contact</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<h2>Privacy Policy</h2>
+<p><strong>Effective Date:</strong> June 16, 2025</p>
+
+<p>Relax Games Studio ("we", "us", or "our") respects your privacy. This Privacy Policy explains how we collect, use, and protect your data when you play Twist & Merge.</p>
+
+<h3>1. Information We Collect</h3>
+<ul>
+  <li>Player nickname (via Google Play Games or Apple Game Center)</li>
+  <li>Device info (model, OS, language, timezone, advertising ID)</li>
+  <li>Usage data (progress, sessions, in-game events)</li>
+  <li>Ad data (views, clicks, rewards via IronSource)</li>
+  <li>Analytics (Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. How We Use It & Legal Basis</h3>
+<ul>
+  <li><strong>Game functionality:</strong> contract performance / legitimate interests</li>
+  <li><strong>Advertising:</strong> personalized (consent), non-personalized (legitimate interests)</li>
+  <li><strong>Analytics:</strong> improving game (legitimate interests or consent)</li>
+  <li><strong>Leaderboards:</strong> contract or consent</li>
+</ul>
+
+<h3>3. Sharing Data</h3>
+<p>We may share data with IronSource, Unity, Firebase, Google, and Apple. We do not sell your personal data.</p>
+
+<h3>4. International Transfers</h3>
+<p>Your data may be transferred outside your country. We use standard contractual clauses (SCCs) for legal protection.</p>
+
+<h3>5. Children</h3>
+<p>This game is not for children under 13. If we learn we collected data from a child, we will delete it.</p>
+
+<h3>6. Data Retention</h3>
+<p>We retain data as long as needed to fulfill purposes or legal requirements. Anonymized data may be kept longer.</p>
+
+<h3>7. Security</h3>
+<p>We use technical and organizational measures (like encryption and access control) to protect data.</p>
+
+<h3>8. Your Rights</h3>
+<ul>
+  <li>Access, correct, delete your data</li>
+  <li>Restrict or object to processing</li>
+  <li>Data portability</li>
+  <li>Withdraw consent</li>
+</ul>
+<p>To exercise your rights, email: relax.games.studio@gmail.com</p>
+
+<h3>9. Third-Party Services</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Changes</h3>
+<p>We may update this policy. Continued use means acceptance of changes.</p>
+
+<h3>11. Contact</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<p>We are a two-person independent studio, not a registered company.</p>
+
+  </div>
+
+  <div class="content" id="de">
+    <h2>Nutzungsbedingungen</h2>
+<p><strong>Gültig ab:</strong> 16. Juni 2025</p>
+
+<p>Willkommen bei Twist & Merge, entwickelt von Relax Games Studio („wir“).</p>
+
+<p>Durch das Herunterladen oder die Nutzung des Spiels stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie nicht einverstanden sind, nutzen Sie das Spiel bitte nicht.</p>
+
+<h3>1. Zulässigkeit</h3>
+<p>Sie müssen mindestens 13 Jahre alt sein (oder das gesetzliche Mindestalter in Ihrer Region erreicht haben), um das Spiel zu nutzen.</p>
+
+<h3>2. Lizenz</h3>
+<p>Wir gewähren Ihnen eine beschränkte, nicht-exklusive, nicht übertragbare und widerrufbare Lizenz zur Nutzung des Spiels für persönliche, nicht-kommerzielle Zwecke. Alle Rechte verbleiben bei Relax Games Studio.</p>
+
+<h3>3. Benutzerinhalte</h3>
+<p>Wir erheben keine benutzergenerierten Inhalte. Ihr Spielername wird über Google Play Games oder Apple Game Center bezogen.</p>
+
+<h3>4. In-App-Käufe</h3>
+<p>Alle Käufe werden über Google Play oder den App Store abgewickelt. <strong>Alle Käufe sind endgültig und nicht erstattungsfähig</strong>, es sei denn, das geltende Recht oder die Store-Richtlinien sehen etwas anderes vor. Virtuelle Gegenstände haben keinen realen Wert.</p>
+
+<h3>5. Werbung</h3>
+<p>Im Spiel werden Drittanbieter-Anzeigen (z. B. IronSource) angezeigt. Wir sind nicht für deren Inhalte verantwortlich.</p>
+
+<h3>6. Bestenlisten</h3>
+<p>Das Spiel nutzt Unity-Services für Bestenlisten. Mit der Teilnahme stimmen Sie der Anzeige Ihres Namens und Punktestands zu.</p>
+
+<h3>7. Verbotenes Verhalten</h3>
+<p>Es ist untersagt zu betrügen, das Spiel zu manipulieren, unautorisierte Software zu verwenden, andere Spieler zu belästigen oder Gesetze zu verletzen.</p>
+
+<h3>8. Beendigung</h3>
+<p>Bei Verstoß gegen diese Bedingungen können wir Ihren Zugang zum Spiel ohne Vorankündigung sperren oder beenden.</p>
+
+<h3>9. Haftungsausschluss</h3>
+<p>Das Spiel wird „wie besehen“ und ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt.</p>
+
+<h3>10. Haftungsbeschränkung</h3>
+<p>Relax Games Studio haftet nicht für indirekte, zufällige oder Folgeschäden, soweit gesetzlich zulässig.</p>
+
+<h3>11. Freistellung</h3>
+<p>Sie verpflichten sich, Relax Games Studio von Ansprüchen freizustellen, die durch Ihren Verstoß gegen diese Bedingungen entstehen.</p>
+
+<h3>12. Anwendbares Recht</h3>
+<p>Diese Bedingungen unterliegen dem Recht der Republik Belarus. Streitigkeiten werden vor belarussischen Gerichten verhandelt.</p>
+
+<h3>13. Änderungen</h3>
+<p>Wir können diese Bedingungen ändern. Durch die weitere Nutzung akzeptieren Sie die geänderten Bedingungen.</p>
+
+<h3>14. Kontakt</h3>
+<p>E-Mail: relax.games.studio@gmail.com</p>
+<h2>Datenschutzrichtlinie</h2>
+<p><strong>Gültig ab:</strong> 16. Juni 2025</p>
+
+<p>Relax Games Studio („wir“) respektiert Ihre Privatsphäre. In dieser Richtlinie wird erläutert, wie wir Ihre Daten in Twist & Merge erheben, verwenden und schützen.</p>
+
+<h3>1. Welche Daten wir erfassen</h3>
+<ul>
+  <li>Spielername (über Google Play Games oder Apple Game Center)</li>
+  <li>Geräteinformationen (Modell, Betriebssystem, Sprache, Zeitzone, Werbe-ID)</li>
+  <li>Nutzungsdaten (Spielfortschritt, Sitzungsdauer, Spielereignisse)</li>
+  <li>Werbedaten (Anzeigen, Klicks, Belohnungen – über IronSource)</li>
+  <li>Analysedaten (Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. Zweck & Rechtsgrundlagen</h3>
+<ul>
+  <li><strong>Spielbetrieb:</strong> Vertragserfüllung / berechtigtes Interesse</li>
+  <li><strong>Werbung:</strong> personalisiert (mit Einwilligung), nicht personalisiert (berechtigtes Interesse)</li>
+  <li><strong>Analyse:</strong> Spielverbesserung (berechtigtes Interesse oder Einwilligung)</li>
+  <li><strong>Bestenlisten:</strong> Vertrag oder Einwilligung</li>
+</ul>
+
+<h3>3. Weitergabe Ihrer Daten</h3>
+<p>Wir geben Daten an IronSource, Unity, Firebase, Google und Apple weiter. Wir verkaufen keine personenbezogenen Daten.</p>
+
+<h3>4. Internationale Datenübertragungen</h3>
+<p>Daten können außerhalb Ihres Landes verarbeitet werden. Wir setzen Standardvertragsklauseln (SCCs) zum Schutz ein.</p>
+
+<h3>5. Kinder</h3>
+<p>Das Spiel ist nicht für Kinder unter 13 Jahren bestimmt. Sollten wir Daten versehentlich erfassen, löschen wir sie umgehend.</p>
+
+<h3>6. Speicherfrist</h3>
+<p>Daten werden so lange gespeichert, wie es für die Zwecke erforderlich ist oder gesetzlich vorgeschrieben ist.</p>
+
+<h3>7. Sicherheit</h3>
+<p>Wir setzen angemessene technische und organisatorische Sicherheitsmaßnahmen ein (z. B. Verschlüsselung, Zugriffskontrolle).</p>
+
+<h3>8. Ihre Rechte</h3>
+<ul>
+  <li>Zugriff auf Ihre Daten, Berichtigung, Löschung</li>
+  <li>Einschränkung oder Widerspruch gegen Verarbeitung</li>
+  <li>Datenübertragbarkeit</li>
+  <li>Widerruf Ihrer Einwilligung</li>
+</ul>
+<p>Kontakt: relax.games.studio@gmail.com</p>
+
+<h3>9. Dienste Dritter</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Änderungen</h3>
+<p>Wir können diese Richtlinie aktualisieren. Durch die weitere Nutzung akzeptieren Sie die Änderungen.</p>
+
+<h3>11. Kontakt</h3>
+<p>E-Mail: relax.games.studio@gmail.com</p>
+<p>Wir sind ein unabhängiges Zwei-Personen-Studio ohne formelle Unternehmensregistrierung.</p>
+  </div>
+
+  <div class="content" id="fr">
+    <h2>Conditions d'utilisation</h2>
+<p><strong>Date d'effet :</strong> 16 juin 2025</p>
+
+<p>Bienvenue dans Twist & Merge, développé par Relax Games Studio (« nous », « notre » ou « nos »).</p>
+
+<p>En téléchargeant ou en utilisant le jeu, vous acceptez d'être lié par ces Conditions d'utilisation. Si vous n'êtes pas d'accord avec ces conditions, veuillez ne pas utiliser le jeu.</p>
+
+<h3>1. Admissibilité</h3>
+<p>Vous devez avoir au moins 13 ans (ou l'âge requis par la loi de votre pays) pour jouer à ce jeu.</p>
+
+<h3>2. Licence</h3>
+<p>Nous vous accordons une licence limitée, non exclusive, non transférable et révocable pour utiliser Twist & Merge à des fins personnelles et non commerciales. Tous les droits sur le contenu, le code, la musique et les visuels appartiennent à Relax Games Studio.</p>
+
+<h3>3. Contenu utilisateur</h3>
+<p>Nous ne recueillons aucun contenu personnalisé. Votre pseudonyme est récupéré via Google Play Games ou Apple Game Center.</p>
+
+<h3>4. Achats intégrés</h3>
+<p>Les achats dans l'application sont facultatifs et traités par Google Play ou l'App Store. <strong>Tous les achats sont définitifs et non remboursables</strong>, sauf disposition contraire de la loi ou de la politique de la plateforme. Les éléments virtuels n'ont aucune valeur réelle.</p>
+
+<h3>5. Publicités</h3>
+<p>Le jeu affiche des publicités tierces (par exemple, IronSource). Nous ne sommes pas responsables de leur contenu.</p>
+
+<h3>6. Classements</h3>
+<p>En participant aux classements via Unity, vous acceptez que votre pseudonyme et votre score soient affichés aux autres joueurs.</p>
+
+<h3>7. Comportement interdit</h3>
+<p>Vous ne devez pas tricher, modifier le jeu, utiliser des logiciels tiers, nuire aux serveurs ou avoir un comportement offensant.</p>
+
+<h3>8. Résiliation</h3>
+<p>Nous pouvons suspendre ou résilier votre accès au jeu sans préavis si vous enfreignez ces conditions. Votre licence prendra alors fin.</p>
+
+<h3>9. Aucune garantie</h3>
+<p>Le jeu est fourni « tel quel » sans garantie d'aucune sorte.</p>
+
+<h3>10. Limitation de responsabilité</h3>
+<p>Dans la mesure maximale autorisée par la loi, Relax Games Studio n'est pas responsable des dommages indirects, spéciaux ou consécutifs.</p>
+
+<h3>11. Indemnisation</h3>
+<p>Vous acceptez d’indemniser Relax Games Studio contre toute réclamation liée à votre utilisation du jeu ou à la violation des présentes conditions.</p>
+
+<h3>12. Droit applicable</h3>
+<p>Les présentes conditions sont régies par les lois de la République de Biélorussie. Tout litige sera soumis aux tribunaux de Biélorussie, sauf disposition contraire de la loi locale.</p>
+
+<h3>13. Modifications</h3>
+<p>Nous pouvons mettre à jour ces conditions. Toute utilisation continue constitue une acceptation des nouvelles conditions.</p>
+
+<h3>14. Contact</h3>
+<p>Email : relax.games.studio@gmail.com</p>
+<h2>Politique de confidentialité</h2>
+<p><strong>Date d'effet :</strong> 16 juin 2025</p>
+
+<p>Relax Games Studio (« nous », « notre » ou « nos ») respecte votre vie privée. Cette politique explique comment nous collectons, utilisons et protégeons vos données dans le jeu Twist & Merge.</p>
+
+<h3>1. Données collectées</h3>
+<ul>
+  <li>Pseudonyme (depuis Game Center ou Google Play Games)</li>
+  <li>Informations sur l'appareil (modèle, OS, langue, fuseau horaire, ID publicitaire)</li>
+  <li>Données d’utilisation (progression, durée de session, événements)</li>
+  <li>Données publicitaires (affichages, clics, récompenses via IronSource)</li>
+  <li>Données analytiques (via Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. Utilisation et base légale</h3>
+<ul>
+  <li><strong>Fourniture du service :</strong> progression, sauvegarde — intérêt légitime ou exécution du contrat</li>
+  <li><strong>Publicité :</strong> personnalisée (consentement), non personnalisée (intérêt légitime)</li>
+  <li><strong>Analyse :</strong> améliorer le jeu (intérêt légitime ou consentement)</li>
+  <li><strong>Classements :</strong> pseudonyme et score — consentement ou exécution du contrat</li>
+</ul>
+
+<h3>3. Partage de données</h3>
+<p>Nous partageons vos données avec : IronSource, Unity, Firebase, GameAnalytics, services de plateforme. Nous ne vendons pas vos données.</p>
+
+<h3>4. Transferts internationaux</h3>
+<p>Vos données peuvent être transférées en dehors de l’UE. Des mesures de protection sont en place (SCC).</p>
+
+<h3>5. Enfants</h3>
+<p>Le jeu ne s’adresse pas aux enfants de moins de 13 ans. Si nous avons collecté ces données, contactez-nous pour les supprimer.</p>
+
+<h3>6. Durée de conservation</h3>
+<p>Nous conservons vos données aussi longtemps que nécessaire pour les finalités décrites, ou selon les exigences légales.</p>
+
+<h3>7. Sécurité</h3>
+<p>Nous appliquons des mesures techniques et organisationnelles pour sécuriser vos données.</p>
+
+<h3>8. Vos droits</h3>
+<ul>
+  <li>Accès, rectification, suppression</li>
+  <li>Opposition ou limitation du traitement</li>
+  <li>Portabilité</li>
+  <li>Retrait du consentement</li>
+</ul>
+<p>Pour exercer vos droits : relax.games.studio@gmail.com</p>
+
+<h3>9. Services tiers</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Modifications</h3>
+<p>Nous pouvons modifier cette politique. Toute utilisation continue implique acceptation.</p>
+
+<h3>11. Contact</h3>
+<p>Email : relax.games.studio@gmail.com</p>
+<p>Nous ne sommes pas une entité enregistrée ; le studio est géré par deux développeurs indépendants.</p>
+
+  </div>
+
+  <div class="content" id="es">
+    <h2>Términos de servicio</h2>
+<p><strong>Fecha de entrada en vigor:</strong> 16 de junio de 2025</p>
+
+<p>Bienvenido a Twist & Merge, desarrollado por Relax Games Studio (“nosotros”, “nuestro”).</p>
+
+<p>Al descargar o utilizar el juego, usted acepta estar sujeto a estos Términos de servicio. Si no está de acuerdo, por favor no utilice el juego.</p>
+
+<h3>1. Elegibilidad</h3>
+<p>Debe tener al menos 13 años (o la edad requerida en su país) para usar este juego.</p>
+
+<h3>2. Licencia</h3>
+<p>Le otorgamos una licencia limitada, no exclusiva, no transferible y revocable para usar el juego con fines personales y no comerciales. Todos los derechos pertenecen a Relax Games Studio.</p>
+
+<h3>3. Contenido del usuario</h3>
+<p>No recopilamos contenido personalizado. Su apodo se obtiene a través de Google Play Games o Apple Game Center.</p>
+
+<h3>4. Compras dentro de la aplicación</h3>
+<p>Las compras son opcionales y procesadas por Google Play o App Store. <strong>Todas las compras son finales y no reembolsables</strong>, salvo que lo exija la ley o la política de la plataforma.</p>
+
+<h3>5. Publicidad</h3>
+<p>El juego puede mostrar anuncios de terceros (por ejemplo, IronSource). No somos responsables de su contenido.</p>
+
+<h3>6. Clasificaciones</h3>
+<p>Participar en las clasificaciones implica que acepta compartir su apodo y puntuación a través de los servicios de Unity.</p>
+
+<h3>7. Conducta prohibida</h3>
+<p>No debe hacer trampas, modificar el juego, usar software no autorizado o acosar a otros jugadores.</p>
+
+<h3>8. Terminación</h3>
+<p>Podemos suspender o cancelar su acceso al juego si incumple estos términos.</p>
+
+<h3>9. Exclusión de garantías</h3>
+<p>El juego se proporciona “tal cual”, sin garantías de ningún tipo.</p>
+
+<h3>10. Limitación de responsabilidad</h3>
+<p>Relax Games Studio no se hace responsable por daños indirectos, incidentales o especiales.</p>
+
+<h3>11. Indemnización</h3>
+<p>Usted acepta indemnizarnos por cualquier daño derivado del uso indebido del juego o violación de estos términos.</p>
+
+<h3>12. Ley aplicable</h3>
+<p>Estos términos se rigen por las leyes de la República de Bielorrusia. Las disputas se resolverán ante sus tribunales, salvo disposición contraria de la legislación local.</p>
+
+<h3>13. Cambios</h3>
+<p>Podemos actualizar estos términos. El uso continuado implica aceptación de los cambios.</p>
+
+<h3>14. Contacto</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<h2>Política de privacidad</h2>
+<p><strong>Fecha de entrada en vigor:</strong> 16 de junio de 2025</p>
+
+<p>Relax Games Studio (“nosotros”, “nuestro”) respeta su privacidad. Esta política explica cómo recopilamos, usamos y protegemos su información en Twist & Merge.</p>
+
+<h3>1. Datos recopilados</h3>
+<ul>
+  <li>Apodo (de Game Center o Google Play Games)</li>
+  <li>Información del dispositivo (modelo, SO, idioma, zona horaria, ID publicitario)</li>
+  <li>Datos de uso (progreso, duración de sesión, eventos)</li>
+  <li>Datos publicitarios (visualizaciones, clics, recompensas – IronSource)</li>
+  <li>Datos analíticos (Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. Uso y base legal</h3>
+<ul>
+  <li><strong>Funcionalidad del juego:</strong> ejecución del contrato / interés legítimo</li>
+  <li><strong>Publicidad:</strong> personalizada (consentimiento), no personalizada (interés legítimo)</li>
+  <li><strong>Analítica:</strong> mejora del juego (interés legítimo / consentimiento)</li>
+  <li><strong>Clasificaciones:</strong> contrato / consentimiento</li>
+</ul>
+
+<h3>3. Compartir datos</h3>
+<p>Compartimos datos con: IronSource, Unity, Firebase, GameAnalytics, Google y Apple. No vendemos datos personales.</p>
+
+<h3>4. Transferencias internacionales</h3>
+<p>Los datos pueden procesarse fuera de su país. Usamos cláusulas contractuales estándar (SCC).</p>
+
+<h3>5. Menores</h3>
+<p>Este juego no está destinado a menores de 13 años. Si recopilamos sus datos por error, contáctenos para eliminarlos.</p>
+
+<h3>6. Retención de datos</h3>
+<p>Conservamos los datos mientras sea necesario para los fines descritos o según la ley.</p>
+
+<h3>7. Seguridad</h3>
+<p>Aplicamos medidas técnicas y organizativas para proteger sus datos.</p>
+
+<h3>8. Sus derechos</h3>
+<ul>
+  <li>Acceso, rectificación, supresión</li>
+  <li>Oposición, limitación del tratamiento</li>
+  <li>Portabilidad</li>
+  <li>Retirada del consentimiento</li>
+</ul>
+<p>Contacto: relax.games.studio@gmail.com</p>
+
+<h3>9. Servicios de terceros</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Cambios</h3>
+<p>Podemos modificar esta política. El uso continuado implica su aceptación.</p>
+
+<h3>11. Contacto</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<p>Somos un estudio independiente compuesto por dos desarrolladores individuales.</p>
+
+  </div>
+
+  <div class="content" id="pt">
+    <h2>Termos de Serviço</h2>
+<p><strong>Data de Vigência:</strong> 16 de junho de 2025</p>
+
+<p>Bem-vindo ao Twist & Merge, desenvolvido pela Relax Games Studio ("nós", "nosso").</p>
+
+<p>Ao baixar ou usar o jogo, você concorda com estes Termos de Serviço. Se não concordar, não use o jogo.</p>
+
+<h3>1. Elegibilidade</h3>
+<p>Você deve ter pelo menos 13 anos (ou a idade exigida por lei em seu país) para usar este jogo.</p>
+
+<h3>2. Licença</h3>
+<p>Concedemos a você uma licença limitada, não exclusiva, intransferível e revogável para uso pessoal e não comercial do jogo. Todos os direitos pertencem à Relax Games Studio.</p>
+
+<h3>3. Conteúdo do Usuário</h3>
+<p>Não coletamos conteúdo gerado pelo usuário. Seu apelido é obtido via Google Play Games ou Apple Game Center.</p>
+
+<h3>4. Compras no Aplicativo</h3>
+<p>As compras são opcionais e processadas pelas respectivas plataformas (Google Play ou App Store). <strong>Todas as compras são finais e não reembolsáveis</strong>, exceto se exigido por lei ou política da plataforma.</p>
+
+<h3>5. Anúncios</h3>
+<p>O jogo exibe anúncios de terceiros (como IronSource). Não somos responsáveis pelo conteúdo desses anúncios.</p>
+
+<h3>6. Placares</h3>
+<p>Ao participar dos placares via Unity, você concorda em compartilhar seu apelido e pontuação com outros jogadores.</p>
+
+<h3>7. Conduta Proibida</h3>
+<p>Você não deve trapacear, modificar o jogo, usar softwares não autorizados ou assediar outros usuários.</p>
+
+<h3>8. Encerramento</h3>
+<p>Podemos suspender ou encerrar seu acesso ao jogo por violação destes termos. Isso revoga sua licença.</p>
+
+<h3>9. Isenção de Garantias</h3>
+<p>O jogo é fornecido "como está", sem garantias de qualquer tipo.</p>
+
+<h3>10. Limitação de Responsabilidade</h3>
+<p>A Relax Games Studio não será responsável por danos indiretos, incidentais ou especiais, conforme permitido por lei.</p>
+
+<h3>11. Indenização</h3>
+<p>Você concorda em indenizar a Relax Games Studio por qualquer dano ou perda causada pelo uso indevido do jogo.</p>
+
+<h3>12. Legislação Aplicável</h3>
+<p>Estes termos são regidos pelas leis da República da Bielorrússia. Disputas serão resolvidas nos tribunais bielorrussos, salvo disposição legal em contrário.</p>
+
+<h3>13. Alterações</h3>
+<p>Podemos atualizar estes termos. O uso contínuo do jogo constitui aceitação das alterações.</p>
+
+<h3>14. Contato</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<h2>Política de Privacidade</h2>
+<p><strong>Data de Vigência:</strong> 16 de junho de 2025</p>
+
+<p>A Relax Games Studio ("nós", "nosso") respeita sua privacidade. Esta política explica como coletamos, usamos e protegemos seus dados no jogo Twist & Merge.</p>
+
+<h3>1. Dados Coletados</h3>
+<ul>
+  <li>Apelido (via Game Center ou Google Play Games)</li>
+  <li>Informações do dispositivo (modelo, SO, idioma, fuso horário, ID de publicidade)</li>
+  <li>Dados de uso (progresso, duração da sessão, eventos)</li>
+  <li>Dados de anúncios (visualizações, cliques, recompensas – via IronSource)</li>
+  <li>Análise (via Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. Uso e Base Legal</h3>
+<ul>
+  <li><strong>Operação do jogo:</strong> execução contratual / interesse legítimo</li>
+  <li><strong>Publicidade:</strong> personalizada (consentimento), não personalizada (interesse legítimo)</li>
+  <li><strong>Análise:</strong> melhorias (interesse legítimo ou consentimento)</li>
+  <li><strong>Placares:</strong> contrato / consentimento</li>
+</ul>
+
+<h3>3. Compartilhamento de Dados</h3>
+<p>Podemos compartilhar dados com: IronSource, Unity, Firebase, GameAnalytics, Google, Apple. Não vendemos seus dados.</p>
+
+<h3>4. Transferências Internacionais</h3>
+<p>Os dados podem ser processados fora do seu país. Utilizamos cláusulas contratuais padrão (SCCs) para proteção legal.</p>
+
+<h3>5. Crianças</h3>
+<p>O jogo não é destinado a menores de 13 anos. Caso tenhamos coletado dados de forma indevida, entre em contato para exclusão.</p>
+
+<h3>6. Retenção de Dados</h3>
+<p>Reteremos os dados pelo tempo necessário para os fins descritos ou exigido por lei.</p>
+
+<h3>7. Segurança</h3>
+<p>Adotamos medidas técnicas e organizacionais para proteger suas informações pessoais.</p>
+
+<h3>8. Seus Direitos</h3>
+<ul>
+  <li>Acesso, retificação e exclusão</li>
+  <li>Restrição ou oposição ao processamento</li>
+  <li>Portabilidade de dados</li>
+  <li>Revogação de consentimento</li>
+</ul>
+<p>Para exercer seus direitos, entre em contato: relax.games.studio@gmail.com</p>
+
+<h3>9. Serviços de Terceiros</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Alterações</h3>
+<p>Podemos atualizar esta política. O uso contínuo indica concordância com as alterações.</p>
+
+<h3>11. Contato</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<p>Somos um estúdio independente formado por dois desenvolvedores individuais.</p>
+
+  </div>
+
+  <div class="content" id="pl">
+    <h2>Warunki korzystania</h2>
+<p><strong>Data wejścia w życie:</strong> 16 czerwca 2025</p>
+
+<p>Witamy w Twist & Merge, grze stworzonej przez Relax Games Studio („my”, „nasz”).</p>
+
+<p>Korzystając z gry lub ją pobierając, akceptujesz niniejsze warunki. Jeśli się z nimi nie zgadzasz — nie korzystaj z gry.</p>
+
+<h3>1. Wymagania wiekowe</h3>
+<p>Musisz mieć co najmniej 13 lat (lub więcej, jeśli tak wymaga prawo twojego kraju), aby grać.</p>
+
+<h3>2. Licencja</h3>
+<p>Udzielamy ograniczonej, niewyłącznej, nieprzenoszalnej i odwoływalnej licencji na osobiste, niekomercyjne użycie gry. Wszystkie prawa należą do Relax Games Studio.</p>
+
+<h3>3. Treści użytkownika</h3>
+<p>Nie gromadzimy treści tworzonych przez użytkowników. Twój pseudonim jest pobierany z Google Play Games lub Apple Game Center.</p>
+
+<h3>4. Zakupy w aplikacji</h3>
+<p>Zakupy są opcjonalne i obsługiwane przez platformę (Google Play lub App Store). <strong>Wszystkie zakupy są ostateczne i nie podlegają zwrotowi</strong>, chyba że obowiązujące przepisy stanowią inaczej.</p>
+
+<h3>5. Reklamy</h3>
+<p>Gra wyświetla reklamy firm zewnętrznych (np. IronSource). Nie odpowiadamy za ich treść.</p>
+
+<h3>6. Rankingi</h3>
+<p>Korzystając z rankingów Unity, zgadzasz się na udostępnienie swojego pseudonimu i wyniku innym graczom.</p>
+
+<h3>7. Zabronione działania</h3>
+<p>Nie wolno oszukiwać, modyfikować gry, używać zewnętrznego oprogramowania ani nękać innych użytkowników.</p>
+
+<h3>8. Zakończenie</h3>
+<p>Możemy zawiesić lub zakończyć twój dostęp do gry, jeśli naruszysz te warunki. Licencja wygasa automatycznie.</p>
+
+<h3>9. Wyłączenie gwarancji</h3>
+<p>Gra jest udostępniana „w stanie, w jakim jest”, bez jakichkolwiek gwarancji.</p>
+
+<h3>10. Ograniczenie odpowiedzialności</h3>
+<p>Relax Games Studio nie ponosi odpowiedzialności za szkody pośrednie, przypadkowe ani wynikowe.</p>
+
+<h3>11. Odszkodowanie</h3>
+<p>Zgadzasz się zabezpieczyć Relax Games Studio przed wszelkimi roszczeniami wynikającymi z naruszenia niniejszych warunków.</p>
+
+<h3>12. Prawo właściwe</h3>
+<p>Warunki podlegają prawu Republiki Białorusi. Spory będą rozstrzygane przez sądy białoruskie, o ile prawo nie stanowi inaczej.</p>
+
+<h3>13. Zmiany</h3>
+<p>Możemy wprowadzać zmiany w tych warunkach. Dalsze korzystanie z gry oznacza akceptację zmian.</p>
+
+<h3>14. Kontakt</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<h2>Polityka prywatności</h2>
+<p><strong>Data wejścia w życie:</strong> 16 czerwca 2025</p>
+
+<p>Relax Games Studio („my”, „nasz”) szanuje twoją prywatność. Niniejsza polityka wyjaśnia, jakie dane zbieramy i jak je przetwarzamy w grze Twist & Merge.</p>
+
+<h3>1. Zbierane dane</h3>
+<ul>
+  <li>Pseudonim gracza (z Google Play Games lub Apple Game Center)</li>
+  <li>Informacje o urządzeniu (model, system operacyjny, język, strefa czasowa, identyfikator reklamowy)</li>
+  <li>Dane dotyczące użytkowania (postęp, czas gry, zdarzenia w grze)</li>
+  <li>Dane reklamowe (wyświetlenia, kliknięcia, nagrody — IronSource)</li>
+  <li>Analityka (Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. Cel i podstawa prawna</h3>
+<ul>
+  <li><strong>Działanie gry:</strong> wykonanie umowy / uzasadniony interes</li>
+  <li><strong>Reklamy:</strong> spersonalizowane (zgoda), niespersonalizowane (uzasadniony interes)</li>
+  <li><strong>Analityka:</strong> poprawa jakości gry (uzasadniony interes lub zgoda)</li>
+  <li><strong>Rankingi:</strong> zgoda lub wykonanie umowy</li>
+</ul>
+
+<h3>3. Udostępnianie danych</h3>
+<p>Dane mogą być udostępniane IronSource, Unity, Firebase, GameAnalytics, Google, Apple. Nie sprzedajemy danych.</p>
+
+<h3>4. Transfery międzynarodowe</h3>
+<p>Dane mogą być przetwarzane poza twoim krajem. W takich przypadkach stosujemy standardowe klauzule umowne (SCC).</p>
+
+<h3>5. Dzieci</h3>
+<p>Gra nie jest przeznaczona dla dzieci poniżej 13 lat. Jeśli takie dane zostały zebrane — usuniemy je na żądanie.</p>
+
+<h3>6. Okres przechowywania danych</h3>
+<p>Przechowujemy dane tak długo, jak jest to potrzebne do celów opisanych powyżej lub wymagane prawem.</p>
+
+<h3>7. Bezpieczeństwo</h3>
+<p>Stosujemy środki techniczne i organizacyjne w celu ochrony danych.</p>
+
+<h3>8. Twoje prawa</h3>
+<ul>
+  <li>Dostęp, korekta, usunięcie danych</li>
+  <li>Sprzeciw lub ograniczenie przetwarzania</li>
+  <li>Przenoszenie danych</li>
+  <li>Wycofanie zgody</li>
+</ul>
+<p>Aby skorzystać z praw, skontaktuj się z nami: relax.games.studio@gmail.com</p>
+
+<h3>9. Usługi zewnętrzne</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Zmiany</h3>
+<p>Możemy aktualizować tę politykę. Korzystanie z gry po zmianach oznacza ich akceptację.</p>
+
+<h3>11. Kontakt</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<p>Studio nie jest zarejestrowaną firmą. Prowadzone przez dwóch niezależnych deweloperów.</p>
+
+  </div>
+
+  <div class="content" id="ru">
+    <h2>Условия использования</h2>
+<p><strong>Дата вступления в силу:</strong> 16 июня 2025 г.</p>
+
+<p>Добро пожаловать в игру Twist & Merge, разработанную Relax Games Studio («мы», «нас» или «наш»).</p>
+
+<p>Загружая или используя игру, вы соглашаетесь с настоящими Условиями использования. Если вы не согласны с ними, пожалуйста, не используйте игру.</p>
+
+<h3>1. Возрастные ограничения</h3>
+<p>Вы должны быть не моложе 13 лет (или старше, если этого требует законодательство вашей страны), чтобы использовать игру.</p>
+
+<h3>2. Лицензия</h3>
+<p>Мы предоставляем вам ограниченную, неисключительную, непередаваемую и отзывную лицензию на использование Twist & Merge в личных некоммерческих целях. Все права на игру (код, графика, музыка, контент) принадлежат Relax Games Studio.</p>
+
+<h3>3. Контент пользователей</h3>
+<p>Мы не собираем пользовательский контент. Ваш игровой никнейм берется из Google Play Games или Apple Game Center.</p>
+
+<h3>4. Покупки в приложении</h3>
+<p>Все покупки обрабатываются платформой (Google Play или App Store). <strong>Все покупки являются окончательными и не подлежат возврату</strong>, за исключением случаев, предусмотренных законодательством или политиками магазина. Виртуальные предметы не имеют реальной стоимости и не являются вашей собственностью.</p>
+
+<h3>5. Реклама</h3>
+<p>В игре отображается сторонняя реклама (например, IronSource). Мы не несем ответственности за её содержание.</p>
+
+<h3>6. Таблицы лидеров</h3>
+<p>Игра использует таблицы лидеров от Unity. Участвуя, вы соглашаетесь на передачу и публикацию вашего никнейма и результата.</p>
+
+<h3>7. Запрещенные действия</h3>
+<p>Запрещено: использовать читы, эксплуатировать баги, модифицировать игру, использовать несанкционированное ПО, нарушать законы или мешать другим игрокам.</p>
+
+<h3>8. Прекращение доступа</h3>
+<p>Мы можем приостановить или прекратить ваш доступ к игре без предварительного уведомления в случае нарушения Условий. Ваша лицензия будет аннулирована, данные могут быть удалены.</p>
+
+<h3>9. Отказ от гарантий</h3>
+<p>Игра предоставляется «как есть» и «по мере доступности», без каких-либо гарантий.</p>
+
+<h3>10. Ограничение ответственности</h3>
+<p>Relax Games Studio не несёт ответственности за косвенные, случайные, специальные или сопутствующие убытки, в максимально разрешённой законом степени.</p>
+
+<h3>11. Компенсация ущерба</h3>
+<p>Вы соглашаетесь возместить убытки Relax Games Studio за претензии, возникшие в результате нарушения вами настоящих Условий.</p>
+
+<h3>12. Применимое право</h3>
+<p>Данные Условия регулируются законодательством Республики Беларусь. Все споры рассматриваются в судах Беларуси (если иное не предусмотрено законом вашей страны).</p>
+
+<h3>13. Изменения</h3>
+<p>Мы можем вносить изменения в Условия. Продолжение использования игры означает ваше согласие с обновлениями.</p>
+
+<h3>14. Контакты</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<h2>Политика конфиденциальности</h2>
+<p><strong>Дата вступления в силу:</strong> 16 июня 2025 г.</p>
+
+<p>Relax Games Studio («мы») уважает вашу конфиденциальность. В этом документе объясняется, как мы собираем, используем и защищаем данные игроков в игре Twist & Merge.</p>
+
+<h3>1. Какие данные мы собираем</h3>
+<ul>
+  <li>Игровой никнейм (через Google Play Games или Apple Game Center)</li>
+  <li>Информация об устройстве (модель, ОС, язык, часовой пояс, рекламный идентификатор)</li>
+  <li>Данные использования (прогресс, длительность сессий, игровые события)</li>
+  <li>Рекламные данные (показы, клики, награды — через IronSource)</li>
+  <li>Аналитика (Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. Цели и правовые основания</h3>
+<ul>
+  <li><strong>Работа игры:</strong> исполнение контракта / законные интересы</li>
+  <li><strong>Реклама:</strong> персонализированная (с согласия), неперсонализированная (законные интересы)</li>
+  <li><strong>Аналитика:</strong> улучшение игры (с согласия или на основании законных интересов)</li>
+  <li><strong>Таблицы лидеров:</strong> исполнение контракта / согласие</li>
+</ul>
+
+<h3>3. С кем мы делимся данными</h3>
+<p>Мы можем передавать данные IronSource, Unity, Firebase, Google и Apple. Мы не продаем персональные данные.</p>
+
+<h3>4. Международная передача данных</h3>
+<p>Ваши данные могут обрабатываться за пределами вашей страны. Мы применяем стандартные договорные положения (SCCs) для правовой защиты.</p>
+
+<h3>5. Дети</h3>
+<p>Игра не предназначена для детей младше 13 лет. Если мы случайно собрали такие данные — удалим их после обращения.</p>
+
+<h3>6. Срок хранения данных</h3>
+<p>Мы храним данные столько, сколько это необходимо для выполнения целей, либо по закону. Анонимизированные данные можем хранить дольше.</p>
+
+<h3>7. Безопасность</h3>
+<p>Мы применяем технические и организационные меры защиты данных (шифрование, ограничение доступа и т.д.).</p>
+
+<h3>8. Ваши права</h3>
+<ul>
+  <li>Доступ, исправление, удаление данных</li>
+  <li>Ограничение или возражение против обработки</li>
+  <li>Передача данных (портируемость)</li>
+  <li>Отзыв согласия (если применимо)</li>
+</ul>
+<p>Для реализации прав — пишите на: relax.games.studio@gmail.com</p>
+
+<h3>9. Сторонние сервисы</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Изменения политики</h3>
+<p>Мы можем обновлять эту Политику. Продолжение использования игры означает согласие с новыми условиями.</p>
+
+<h3>11. Контакты</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<p>Мы — независимая команда из двух разработчиков. Компания юридически не зарегистрирована.</p>
+
+  </div>
+
+  <div class="content" id="uk">
+    <h2>Умови використання</h2>
+<p><strong>Дата набуття чинності:</strong> 16 червня 2025 року</p>
+
+<p>Ласкаво просимо до гри Twist & Merge, розробленої Relax Games Studio («ми»).</p>
+
+<p>Завантажуючи або використовуючи гру, ви погоджуєтесь з цими Умовами використання. Якщо ви не погоджуєтесь — не використовуйте гру.</p>
+
+<h3>1. Вікові обмеження</h3>
+<p>Вам повинно бути щонайменше 13 років (або більше, якщо це передбачено законами вашої країни), щоб грати в гру.</p>
+
+<h3>2. Ліцензія</h3>
+<p>Ми надаємо вам обмежену, невиключну, не передавану, відкличну ліцензію на використання гри для особистих, некомерційних цілей. Усі права на гру (код, графіка, музика, контент) належать Relax Games Studio.</p>
+
+<h3>3. Контент користувача</h3>
+<p>Ми не збираємо користувацький контент. Ваш нікнейм завантажується з Google Play Games або Apple Game Center.</p>
+
+<h3>4. Покупки в додатку</h3>
+<p>Усі транзакції обробляються відповідною платформою (Google Play або App Store). <strong>Усі покупки є остаточними та не підлягають поверненню коштів</strong>, якщо це не передбачено законом або політикою магазину. Віртуальні предмети не мають реальної вартості та не є вашою власністю.</p>
+
+<h3>5. Реклама</h3>
+<p>У грі показується реклама третіх сторін (наприклад, IronSource). Ми не несемо відповідальності за її зміст.</p>
+
+<h3>6. Таблиці лідерів</h3>
+<p>Гра використовує таблиці лідерів Unity. Ви погоджуєтесь, що ваш нікнейм і результат можуть бути показані іншим гравцям.</p>
+
+<h3>7. Заборонена поведінка</h3>
+<p>Заборонено шахраювати, використовувати баги, модифікувати гру, застосовувати стороннє ПЗ, переслідувати інших гравців або порушувати закон.</p>
+
+<h3>8. Припинення доступу</h3>
+<p>Ми можемо обмежити або припинити ваш доступ до гри без попередження в разі порушення Умов. Ліцензія буде скасована, а пов’язані дані — видалені.</p>
+
+<h3>9. Відмова від гарантій</h3>
+<p>Гра надається «як є», без будь-яких гарантій.</p>
+
+<h3>10. Обмеження відповідальності</h3>
+<p>Relax Games Studio не несе відповідальності за непрямі, випадкові або спеціальні збитки в максимально дозволеній законом мірі.</p>
+
+<h3>11. Відшкодування збитків</h3>
+<p>Ви погоджуєтесь відшкодувати Relax Games Studio всі збитки, що виникли внаслідок порушення вами цих Умов.</p>
+
+<h3>12. Застосовне право</h3>
+<p>Ці Умови регулюються законодавством Республіки Білорусь. Спори вирішуються в судах Білорусі, якщо інше не передбачено законом вашої країни.</p>
+
+<h3>13. Зміни</h3>
+<p>Ми можемо оновлювати ці Умови. Продовження використання гри означає згоду з оновленими умовами.</p>
+
+<h3>14. Контакти</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<h2>Політика конфіденційності</h2>
+<p><strong>Дата набуття чинності:</strong> 16 червня 2025 року</p>
+
+<p>Relax Games Studio («ми») поважає вашу конфіденційність. У цій політиці пояснюється, як ми збираємо, використовуємо та захищаємо ваші дані в грі Twist & Merge.</p>
+
+<h3>1. Які дані ми збираємо</h3>
+<ul>
+  <li>Нікнейм гравця (через Google Play Games або Apple Game Center)</li>
+  <li>Інформація про пристрій (модель, ОС, мова, часовий пояс, рекламний ідентифікатор)</li>
+  <li>Дані використання (прогрес, сесії, події в грі)</li>
+  <li>Рекламні дані (перегляди, кліки, винагороди – через IronSource)</li>
+  <li>Аналітика (Unity, Firebase, GameAnalytics)</li>
+</ul>
+
+<h3>2. Цілі використання та правові підстави</h3>
+<ul>
+  <li><strong>Функціональність гри:</strong> виконання договору / законний інтерес</li>
+  <li><strong>Реклама:</strong> персоналізована (згода), не персоналізована (законний інтерес)</li>
+  <li><strong>Аналітика:</strong> покращення гри (згода або законний інтерес)</li>
+  <li><strong>Таблиці лідерів:</strong> договір або згода</li>
+</ul>
+
+<h3>3. Передача даних</h3>
+<p>Ми можемо ділитися даними з IronSource, Unity, Firebase, Google та Apple. Ми не продаємо особисті дані.</p>
+
+<h3>4. Міжнародна передача</h3>
+<p>Дані можуть бути оброблені за межами вашої країни. Ми використовуємо стандартні договірні положення (SCCs) для захисту.</p>
+
+<h3>5. Діти</h3>
+<p>Гра не призначена для дітей до 13 років. Якщо ми випадково зібрали такі дані — видалимо їх на вимогу.</p>
+
+<h3>6. Зберігання даних</h3>
+<p>Дані зберігаються стільки, скільки це необхідно для виконання цілей або вимог закону. Анонімізовані дані можуть зберігатись довше.</p>
+
+<h3>7. Безпека</h3>
+<p>Ми використовуємо технічні та організаційні заходи (наприклад, шифрування, контроль доступу), щоб захистити ваші дані.</p>
+
+<h3>8. Ваші права</h3>
+<ul>
+  <li>Доступ, виправлення, видалення даних</li>
+  <li>Обмеження або заперечення обробки</li>
+  <li>Портативність даних</li>
+  <li>Відкликання згоди (якщо застосовується)</li>
+</ul>
+<p>Звертайтесь за адресою: relax.games.studio@gmail.com</p>
+
+<h3>9. Сторонні сервіси</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. Зміни до політики</h3>
+<p>Ми можемо оновлювати цю політику. Продовження використання гри означає згоду з новою версією.</p>
+
+<h3>11. Контакти</h3>
+<p>Email: relax.games.studio@gmail.com</p>
+<p>Ми — незалежна команда з двох розробників. Юридично компанія не зареєстрована.</p>
+  </div>
+
+  <div class="content" id="zh">
+  <h2>服务条款</h2>
+<p><strong>生效日期：</strong> 2025年6月16日</p>
+
+<p>欢迎使用 Twist & Merge，由 Relax Games Studio（“我们”）开发。</p>
+
+<p>通过下载或使用本游戏，即表示您同意遵守本服务条款。如果您不同意，请不要使用本游戏。</p>
+
+<h3>1. 使用资格</h3>
+<p>您必须年满13岁（或您所在地法律要求的年龄）才能使用本游戏。</p>
+
+<h3>2. 许可协议</h3>
+<p>我们授予您一项有限的、不可转让的、可撤销的非独占许可，仅供个人非商业用途。游戏的所有权归 Relax Games Studio 所有。</p>
+
+<h3>3. 用户内容</h3>
+<p>我们不收集用户生成的内容。昵称通过 Google Play Games 或 Apple Game Center 获取。</p>
+
+<h3>4. 应用内购买</h3>
+<p>本游戏提供可选的应用内购买，由平台（Google Play 或 App Store）处理。<strong>所有购买均为最终购买，除非法律或平台政策另有规定，不予退款</strong>。</p>
+
+<h3>5. 广告</h3>
+<p>本游戏展示第三方广告（例如 IronSource），我们对其内容不承担任何责任。</p>
+
+<h3>6. 排行榜</h3>
+<p>游戏可能使用 Unity 的排行榜服务。参与即表示您同意共享昵称和分数。</p>
+
+<h3>7. 禁止行为</h3>
+<p>禁止作弊、利用漏洞、修改游戏、使用第三方软件或骚扰他人。</p>
+
+<h3>8. 终止</h3>
+<p>若您违反本条款，我们可随时终止您的游戏访问权限，且不另行通知。</p>
+
+<h3>9. 免责声明</h3>
+<p>游戏按“现状”和“可用”基础提供，不作任何形式的保证。</p>
+
+<h3>10. 责任限制</h3>
+<p>在适用法律允许的最大范围内，Relax Games Studio 不对任何间接、偶然或特殊损失承担责任。</p>
+
+<h3>11. 赔偿</h3>
+<p>您同意对因违反条款或滥用游戏引起的任何索赔向我们进行赔偿。</p>
+
+<h3>12. 法律适用</h3>
+<p>本条款适用白俄罗斯共和国法律，争议应提交白俄罗斯法院，除非适用法律另有规定。</p>
+
+<h3>13. 变更</h3>
+<p>我们可能随时更新本条款。继续使用游戏即表示您接受更新后的条款。</p>
+
+<h3>14. 联系方式</h3>
+<p>电子邮箱：relax.games.studio@gmail.com</p>
+
+    <h2>隐私政策</h2>
+<p><strong>生效日期：</strong> 2025年6月16日</p>
+
+<p>Relax Games Studio（“我们”）尊重您的隐私。本政策说明我们如何收集、使用和保护您在游戏 Twist & Merge 中的信息。</p>
+
+<h3>1. 我们收集的信息</h3>
+<ul>
+  <li>玩家昵称（来自 Google Play Games 或 Apple Game Center）</li>
+  <li>设备信息（型号、系统、语言、时区、广告 ID）</li>
+  <li>使用数据（进度、游戏时间、事件）</li>
+  <li>广告数据（展示、点击、奖励 – 通过 IronSource）</li>
+  <li>分析数据（Unity、Firebase、GameAnalytics）</li>
+</ul>
+
+<h3>2. 使用目的与法律依据</h3>
+<ul>
+  <li><strong>游戏功能：</strong> 合同履行 / 合理利益</li>
+  <li><strong>广告：</strong> 个性化广告（需同意），非个性化广告（合理利益）</li>
+  <li><strong>分析：</strong> 提升体验（合理利益或同意）</li>
+  <li><strong>排行榜：</strong> 合同或同意</li>
+</ul>
+
+<h3>3. 信息共享</h3>
+<p>我们可能与 IronSource、Unity、Firebase、GameAnalytics、Google 和 Apple 共享数据。我们不出售您的个人信息。</p>
+
+<h3>4. 跨境传输</h3>
+<p>您的数据可能传输到境外服务器。我们将使用标准合同条款（SCCs）保护您的数据。</p>
+
+<h3>5. 儿童隐私</h3>
+<p>本游戏不面向13岁以下儿童。如意外收集其数据，请联系我们删除。</p>
+
+<h3>6. 数据保留</h3>
+<p>我们会根据业务需要或法律要求保留数据，匿名数据可能保留更久。</p>
+
+<h3>7. 安全性</h3>
+<p>我们采取技术和组织措施（如加密、权限控制）保护数据。</p>
+
+<h3>8. 您的权利</h3>
+<ul>
+  <li>访问、更正或删除您的数据</li>
+  <li>限制处理或提出反对</li>
+  <li>数据可携性</li>
+  <li>撤回同意</li>
+</ul>
+<p>联系邮箱：relax.games.studio@gmail.com</p>
+
+<h3>9. 第三方服务</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. 政策更新</h3>
+<p>我们可能修改本政策。继续使用即表示您接受新版本。</p>
+
+<h3>11. 联系方式</h3>
+<p>电子邮箱：relax.games.studio@gmail.com</p>
+<p>我们是由两位独立开发者组成的非注册工作室。</p>
+  </div>
+
+  <div class="content" id="ja">
+    <h2>利用規約</h2>
+<p><strong>施行日:</strong> 2025年6月16日</p>
+
+<p>Twist & Merge へようこそ。本ゲームは Relax Games Studio（「当社」）が開発しました。</p>
+
+<p>本ゲームをダウンロードまたは使用することで、本利用規約に同意したものとみなされます。内容に同意できない場合は、ご利用をお控えください。</p>
+
+<h3>1. 利用資格</h3>
+<p>ご利用には13歳以上（またはお住まいの地域で定められた年齢以上）である必要があります。</p>
+
+<h3>2. ライセンス</h3>
+<p>当社は、個人の非商用目的でゲームを使用するための、限定的・非独占的・譲渡不可・取消可能なライセンスを付与します。すべての権利は Relax Games Studio に帰属します。</p>
+
+<h3>3. ユーザーコンテンツ</h3>
+<p>ユーザーが生成するコンテンツは収集していません。プレイヤー名は Game Center または Google Play Games から取得されます。</p>
+
+<h3>4. アプリ内購入</h3>
+<p>ゲーム内購入はオプションであり、Google Play または App Store により処理されます。<strong>すべての購入は最終的なものであり、返金不可</strong>です（法律またはストアポリシーにより例外がある場合を除く）。</p>
+
+<h3>5. 広告</h3>
+<p>本ゲームには第三者広告（例：IronSource）が表示されます。当社は広告内容には責任を負いません。</p>
+
+<h3>6. ランキング</h3>
+<p>Unity 提供のランキングを利用することで、ニックネームやスコアが他のプレイヤーに表示されることに同意するものとします。</p>
+
+<h3>7. 禁止行為</h3>
+<p>不正行為（チート）、改変、非正規ソフトウェアの使用、他のユーザーへの嫌がらせなどは禁止されています。</p>
+
+<h3>8. 利用停止</h3>
+<p>本規約違反があった場合、通知なしにゲーム利用を停止または終了させることがあります。</p>
+
+<h3>9. 免責事項</h3>
+<p>本ゲームは「現状のまま」「提供可能な限り」で提供されており、いかなる保証もいたしません。</p>
+
+<h3>10. 責任の制限</h3>
+<p>Relax Games Studio は、直接的または間接的な損害について一切の責任を負いません（法律で認められる範囲内）。</p>
+
+<h3>11. 補償</h3>
+<p>利用者による本規約違反または不正行為に起因して生じた損害に対し、補償いただく場合があります。</p>
+
+<h3>12. 準拠法</h3>
+<p>本規約はベラルーシ共和国の法律に準拠します。紛争は同国の裁判所により解決されます（地域法が優先される場合を除く）。</p>
+
+<h3>13. 規約の変更</h3>
+<p>当社は本規約を随時変更することがあります。継続的な利用は変更に同意したものとみなされます。</p>
+
+<h3>14. お問い合わせ</h3>
+<p>メール：relax.games.studio@gmail.com</p>
+<h2>プライバシーポリシー</h2>
+<p><strong>施行日:</strong> 2025年6月16日</p>
+
+<p>Relax Games Studio（「当社」）は、ユーザーのプライバシーを尊重します。本ポリシーは、当社がどのように情報を収集・使用・保護するかを説明します。</p>
+
+<h3>1. 収集する情報</h3>
+<ul>
+  <li>プレイヤー名（Game Center または Google Play Games より取得）</li>
+  <li>デバイス情報（モデル、OS、言語、タイムゾーン、広告 ID）</li>
+  <li>使用状況（プレイ時間、進行状況、イベント）</li>
+  <li>広告データ（表示、クリック、報酬 — IronSource経由）</li>
+  <li>分析データ（Unity、Firebase、GameAnalyticsなど）</li>
+</ul>
+
+<h3>2. 利用目的と法的根拠</h3>
+<ul>
+  <li><strong>ゲームの運営：</strong> 契約履行 / 正当な利益</li>
+  <li><strong>広告：</strong> パーソナライズド（同意）、非パーソナライズド（正当な利益）</li>
+  <li><strong>分析：</strong> 改善・最適化（正当な利益または同意）</li>
+  <li><strong>ランキング：</strong> 契約または同意</li>
+</ul>
+
+<h3>3. 情報の共有</h3>
+<p>当社は IronSource、Unity、Firebase、GameAnalytics、Google、Apple などとデータを共有する場合があります。データは販売されません。</p>
+
+<h3>4. 国際的なデータ転送</h3>
+<p>データは居住国以外に転送される可能性があります。SCC（標準契約条項）等により保護されます。</p>
+
+<h3>5. 子どものプライバシー</h3>
+<p>本ゲームは13歳未満を対象としていません。誤って収集された場合は、連絡をいただければ削除します。</p>
+
+<h3>6. データの保存期間</h3>
+<p>データは目的達成または法的義務のために必要な期間保持されます。匿名化されたデータはより長く保持されることがあります。</p>
+
+<h3>7. セキュリティ</h3>
+<p>適切な技術的および組織的対策（暗号化、アクセス制限など）を講じています。</p>
+
+<h3>8. ユーザーの権利</h3>
+<ul>
+  <li>アクセス、修正、削除</li>
+  <li>処理の制限・反対</li>
+  <li>データのポータビリティ</li>
+  <li>同意の撤回</li>
+</ul>
+<p>連絡先：relax.games.studio@gmail.com</p>
+
+<h3>9. 外部サービス</h3>
+<ul>
+  <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+  <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+</ul>
+
+<h3>10. ポリシーの変更</h3>
+<p>当社は本ポリシーを更新する場合があります。継続的な使用は変更の受諾を意味します。</p>
+
+<h3>11. お問い合わせ</h3>
+<p>メール：relax.games.studio@gmail.com</p>
+<p>当スタジオは登録法人ではなく、2名の個人開発者により運営されています。</p>
+
+  </div>
+
+  <div class="content" id="ar" dir="rtl">
+    <h2>شروط الخدمة</h2>
+  <p><strong>تاريخ السريان:</strong> 16 يونيو 2025</p>
+
+  <p>مرحبًا بك في Twist & Merge، التي طورتها Relax Games Studio ("نحن").</p>
+
+  <p>عند تحميلك للعبة أو استخدامها، فإنك توافق على شروط الخدمة هذه. إذا كنت لا توافق، فيرجى عدم استخدام اللعبة.</p>
+
+  <h3>1. الأهلية</h3>
+  <p>يجب أن يكون عمرك 13 عامًا على الأقل (أو العمر المطلوب حسب قوانين منطقتك) لاستخدام هذه اللعبة.</p>
+
+  <h3>2. الترخيص</h3>
+  <p>نمنحك ترخيصًا محدودًا وغير حصري وغير قابل للتحويل ويمكن إلغاؤه لاستخدام اللعبة لأغراض شخصية وغير تجارية. جميع الحقوق مملوكة لـ Relax Games Studio.</p>
+
+  <h3>3. محتوى المستخدم</h3>
+  <p>نحن لا نجمع محتوى تم إنشاؤه بواسطة المستخدم. يتم استرداد اسم اللاعب من Google Play Games أو Apple Game Center.</p>
+
+  <h3>4. عمليات الشراء داخل التطبيق</h3>
+  <p>تتوفر عمليات شراء اختيارية داخل التطبيق، تتم معالجتها عبر Google Play أو App Store. <strong>جميع المشتريات نهائية وغير قابلة للاسترداد</strong>، ما لم ينص القانون أو سياسة المتجر على خلاف ذلك.</p>
+
+  <h3>5. الإعلانات</h3>
+  <p>تعرض اللعبة إعلانات من أطراف ثالثة (مثل IronSource). نحن غير مسؤولين عن محتوى هذه الإعلانات.</p>
+
+  <h3>6. لوحات الصدارة</h3>
+  <p>عند استخدامك للوحات الصدارة عبر خدمات Unity، فإنك توافق على مشاركة اسمك ودرجاتك مع لاعبين آخرين.</p>
+
+  <h3>7. السلوكيات المحظورة</h3>
+  <p>لا يُسمح بالغش، أو التلاعب باللعبة، أو استخدام برامج غير مصرح بها، أو مضايقة اللاعبين الآخرين.</p>
+
+  <h3>8. الإنهاء</h3>
+  <p>يجوز لنا تعليق أو إنهاء وصولك إلى اللعبة في أي وقت إذا خالفت هذه الشروط. سيتم إنهاء الترخيص الممنوح لك.</p>
+
+  <h3>9. إخلاء المسؤولية</h3>
+  <p>تُقدَّم اللعبة "كما هي" و"حسب التوافر" دون أي ضمانات صريحة أو ضمنية.</p>
+
+  <h3>10. تحديد المسؤولية</h3>
+  <p>لا تتحمل Relax Games Studio أي مسؤولية عن الأضرار غير المباشرة أو العرضية أو الخاصة أو الناتجة.</p>
+
+  <h3>11. التعويض</h3>
+  <p>توافق على تعويض Relax Games Studio عن أي مطالبات أو أضرار نتيجة انتهاكك لهذه الشروط.</p>
+
+  <h3>12. القانون المعمول به</h3>
+  <p>تخضع هذه الشروط لقوانين جمهورية بيلاروس. يتم حل النزاعات في محاكم بيلاروس، ما لم ينص القانون على خلاف ذلك.</p>
+
+  <h3>13. التعديلات</h3>
+  <p>قد نقوم بتحديث هذه الشروط من وقت لآخر. استمرار استخدام اللعبة يعني موافقتك على الشروط الجديدة.</p>
+
+  <h3>14. الاتصال</h3>
+  <p>البريد الإلكتروني: relax.games.studio@gmail.com</p>
+  <h2>سياسة الخصوصية</h2>
+  <p><strong>تاريخ السريان:</strong> 16 يونيو 2025</p>
+
+  <p>تحترم Relax Games Studio خصوصيتك. تشرح هذه السياسة كيفية جمعنا للمعلومات واستخدامها وحمايتها في لعبة Twist & Merge.</p>
+
+  <h3>1. المعلومات التي نجمعها</h3>
+  <ul>
+    <li>اسم اللاعب (من Google Play Games أو Apple Game Center)</li>
+    <li>معلومات الجهاز (الطراز، نظام التشغيل، اللغة، المنطقة الزمنية، معرف الإعلانات)</li>
+    <li>بيانات الاستخدام (مثل التقدم، مدة الجلسة، الأحداث داخل اللعبة)</li>
+    <li>بيانات الإعلانات (المشاهدات، النقرات، الجوائز - عبر IronSource)</li>
+    <li>التحليلات (عبر Unity، Firebase، GameAnalytics)</li>
+  </ul>
+
+  <h3>2. كيفية استخدام المعلومات والأساس القانوني</h3>
+  <ul>
+    <li><strong>تشغيل اللعبة:</strong> تنفيذ العقد / المصالح المشروعة</li>
+    <li><strong>الإعلانات:</strong> مخصصة (تتطلب موافقة)، غير مخصصة (مصالح مشروعة)</li>
+    <li><strong>التحليلات:</strong> تحسين الأداء (موافقة أو مصالح مشروعة)</li>
+    <li><strong>لوحات الصدارة:</strong> تنفيذ العقد / الموافقة</li>
+  </ul>
+
+  <h3>3. مشاركة البيانات</h3>
+  <p>قد نشارك بياناتك مع IronSource وUnity وFirebase وGoogle وApple. نحن لا نبيع بياناتك.</p>
+
+  <h3>4. نقل البيانات دوليًا</h3>
+  <p>قد يتم نقل بياناتك إلى بلدان أخرى. نطبق الضمانات المناسبة (مثل البنود التعاقدية القياسية SCCs).</p>
+
+  <h3>5. خصوصية الأطفال</h3>
+  <p>اللعبة غير مخصصة للأطفال دون سن 13 عامًا. إذا تم جمع بيانات منهم عن طريق الخطأ، سنقوم بحذفها.</p>
+
+  <h3>6. الاحتفاظ بالبيانات</h3>
+  <p>نحتفظ بالبيانات طالما كانت ضرورية للأغراض الموضحة، أو كما هو مطلوب قانونًا.</p>
+
+  <h3>7. الأمان</h3>
+  <p>نستخدم تدابير تقنية وتنظيمية (مثل التشفير والتحكم في الوصول) لحماية بياناتك.</p>
+
+  <h3>8. حقوقك</h3>
+  <ul>
+    <li>الوصول إلى بياناتك وتصحيحها وحذفها</li>
+    <li>تقييد المعالجة أو الاعتراض عليها</li>
+    <li>نقل البيانات</li>
+    <li>سحب الموافقة</li>
+  </ul>
+  <p>لممارسة حقوقك، راسلنا: relax.games.studio@gmail.com</p>
+
+  <h3>9. خدمات الأطراف الثالثة</h3>
+  <ul>
+    <li><a href="https://www.is.com/privacy-policy/">IronSource</a></li>
+    <li><a href="https://unity.com/legal/privacy-policy">Unity</a></li>
+    <li><a href="https://firebase.google.com/support/privacy">Firebase</a></li>
+  </ul>
+
+  <h3>10. التحديثات</h3>
+  <p>قد نقوم بتحديث سياسة الخصوصية. استمرارك في الاستخدام يعني موافقتك على الإصدار المحدّث.</p>
+
+  <h3>11. التواصل معنا</h3>
+  <p>البريد الإلكتروني: relax.games.studio@gmail.com</p>
+  <p>نحن فريق مستقل مكوّن من مطورَين فرديين ولسنا شركة مسجلة.</p>
+  </div>
+
+</body>
+</main>
+
+  <footer>
+    &copy; 2025 Relax Games Studio
+  </footer>
+</body>
+</html>
+
